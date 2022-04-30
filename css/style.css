@@ -1,0 +1,143 @@
+body {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  margin: 0 auto;
+}
+
+a{
+  text-decoration: none;
+  color : black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* HEADER */
+
+
+/*------- VERSION DESKTOP ------ */
+
+@media screen and (min-device-width: 992px){
+
+  header, main{
+    margin: 0 20px;
+  }
+
+  header {
+    display : flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .booki_logo{
+    display: flex;
+  }
+  
+  .navbar{
+    display: flex;
+  }
+
+  .navbar a{
+    padding: 40px;
+    text-align: center;
+  }
+
+  .navbar a:hover{
+    color: #0065FC;
+    border-top: solid;
+  }
+  
+  .navbar a:focus{
+    color: #0065FC;
+    border-top: solid;
+  }
+
+    /* BARRE DE RECHERCHE */
+
+.search_bar{
+  
+  width: 100%;
+}
+
+.search_input{
+  border: solid #F2F2F2;
+  height: 100%;
+}
+
+.search_input:focus{
+  border-color: #F2F2F2;
+}
+
+.search_button{
+  color: white;
+  background-color: #0065FC;
+  border-radius: 0 15px 15px 0;
+  height: 100%;
+  border: none;
+}
+
+.search_bar i{
+  background-color: #F2F2F2;
+  border-radius: 15px 0 0 15px;
+  height: 100%;
+}
+
+}
+
+/*------- VERSION TABLETTE ------ */
+
+@media screen and (min-device-width: 768px) and (max-device-width: 992px){
+
+  .booki_logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
+
+  .navbar a:focus{
+    color: #0065FC;
+    border-bottom: solid;
+  }
+
+  .navbar{
+    display: flex;
+    text-align: center;
+  }
+
+  .navbar a{
+    padding: 40px;
+    width: 100%;
+  }
+}
+
+/*------- VERSION MOBILE ------ */
+
+@media screen and (max-device-width: 768px){
+
+  .booki_logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
+
+  .navbar{
+    display: flex;
+    text-align: center;
+  }
+
+  .navbar a{
+    width: 100%;
+    padding: 40px;
+  }
+  .navbar a:focus{
+    color: #0065FC;
+    border-bottom: solid;
+  }
+
+ 
+
+}
+
