@@ -4,6 +4,9 @@ body {
   -webkit-box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 a{
@@ -20,12 +23,166 @@ main{
   min-height:100%
 }
 
-/* HEADER */
 
+/*FILTRES*/
+
+.filters{
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.filters a{
+  display: flex; 
+  align-items: center;
+  border: solid #F2F2F2;
+  border-radius: 50px;
+  margin: 15px;
+}
+
+.filters span{
+  font-size: 30px;
+  width: 57px;
+  height: 57px;
+ 
+}
+
+.filters i{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filters h2{
+  margin: 0 25px 0 20px;
+}
+
+
+.filters .fa-stack-2x{
+  color: #DEEBFF;
+}
+
+.filters .fa-stack-1x{
+  color:#0065FC;
+}
+
+.result_number .fa-stack-2x{
+  color: #F2F2F2;
+}
+
+.result_number .fa-stack-1x{
+  color: #0065FC;
+}
+
+/*RESULTATS*/
+
+.results_hebergement{
+  display:flex;
+}
+
+.rating .blue{
+  color: #0065FC;
+}
+
+.rating .grey{
+  color:#F2F2F2;
+}
+
+.title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/*Hebergements à Marseille*/
+
+.list_hebergement{
+  padding: 30px;
+}
+
+.list_hebergement h1{
+  width: 100%;
+}
+
+.results_hebergement a{
+  padding: 20px;
+}
+
+.card_medium{
+  padding: 5px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 12px #d9d9d9;
+  background-color: white;
+}
+
+.card_medium .tag{
+  padding: 0 15px 5px ;
+}
+
+.card_medium h2, p{
+  margin: 8px 0;
+}
+
+.card_medium img{
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  object-fit: cover;
+  height: 60%;
+}
+
+/*Les plus populaires*/
+
+.list_populaires{
+  
+  padding: 30px;
+  border-radius: 24px;
+  background-color: #F2F2F2;
+}
+
+.card_small{
+  display: flex;
+  padding: 5px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 1px 1px 12px #d9d9d9;
+}
+
+.card_small img{
+  border-radius: 20px 0 0 20px;
+  width: 40%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.card_small .tag{
+  padding: 0 15px 5px ;
+}
+
+
+/*FOOTER*/
+
+footer{
+  background-color: #F2F2F2;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.bottom_links{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 30px;
+}
+
+footer ul{
+  padding-left: 0px;
+  padding-right: 200px;
+}
 
 /*------- VERSION DESKTOP ------ */
 
-@media screen and (min-device-width: 992px){
+@media screen and (min-width: 992px){
 
   header, main{
     margin: 0 30px;
@@ -98,11 +255,38 @@ main{
     left: 20px;
   }
 
+  /* RESULTATS */
+
+
+  .list_hebergement{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 24px;
+    background-color: #F2F2F2;
+    margin-right: 20px;
+  }
+
+  .list_populaires{
+    margin-left: 20px
+  }
+
+  .card_medium{
+    width: 350px;
+    height: 250px;
+  }
+
+  .card_small{
+    width: 400px;
+    height: 150px;
+  }
+
+  
+
 }
 
 /*------- VERSION TABLETTE ------ */
 
-@media screen and (min-device-width: 768px) and (max-device-width: 992px){
+@media screen and (min-width: 768px) and (max-width: 992px){
 
   .booki_logo{
     display: block;
@@ -124,11 +308,34 @@ main{
     padding: 40px;
     width: 100%;
   }
+
+  /* TABLETTE RESULTATS */
+
+  .list_hebergement{
+    
+  }
+  .results_hebergement{
+    display:flex;
+    flex-flow: wrap column-reverse;
+    align-items: center;
+  }
+
+  .card_medium{
+    width: 100%;
+    height: 300px;
+  }
+
+  .card_small{
+    width: 400px;
+    height: 150px;
+  }
+
+  
 }
 
 /*------- VERSION MOBILE ------ */
 
-@media screen and (max-device-width: 768px){
+@media screen and (max-width: 768px){
 
   .booki_logo{
     display: block;
@@ -150,28 +357,17 @@ main{
     border-bottom: solid;
   }
 
- 
+  .results_hebergement{
+    display:flex;
+    flex-wrap: wrap-reverse;
+  }
 
-}
+  .list_populaires{
+    border-radius: 0;
+  }
 
-/*FOOTER*/
+  .card_small{
+    height: 150px;
+  }
 
-footer{
-  background-color: #F2F2F2;
-  width: 100%;
-  min-width: 490px;
-  position:fixed;
-  bottom: 0;
-}
-
-.bottom_links{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  margin: 30px;
-}
-
-footer ul{
-  padding-left: 0px;
-  padding-right: 200px;
 }
