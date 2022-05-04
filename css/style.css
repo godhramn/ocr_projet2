@@ -24,6 +24,7 @@ main{
 }
 
 
+
 /*FILTRES*/
 
 .filters{
@@ -40,11 +41,15 @@ main{
   margin: 15px;
 }
 
+.filters a:hover{
+  box-shadow: 1px 5px 3px grey;
+}
+
 .filters span{
   font-size: 30px;
-  width: 57px;
-  height: 57px;
- 
+  width: 40px;
+  height: 40px;
+  
 }
 
 .filters i{
@@ -57,13 +62,17 @@ main{
   margin: 0 25px 0 20px;
 }
 
-
 .filters .fa-stack-2x{
   color: #DEEBFF;
+  font-size: 45px;
 }
 
 .filters .fa-stack-1x{
   color:#0065FC;
+  font-size: 20px;
+  display:flex;
+  position:relative;
+  top: -7px;
 }
 
 .result_number .fa-stack-2x{
@@ -78,6 +87,7 @@ main{
 
 .results_hebergement{
   display:flex;
+  margin-top: 30px;
 }
 
 .rating .blue{
@@ -128,7 +138,7 @@ main{
   border-radius: 20px 20px 0 0;
   width: 100%;
   object-fit: cover;
-  height: 60%;
+  height: 55%;
 }
 
 /*Les plus populaires*/
@@ -192,25 +202,44 @@ footer{
 
 footer ul{
   padding-left: 0px;
-  padding-right: 200px;
+  margin-right: 300px;
+}
+
+footer li{
+  margin-bottom: 10px;
 }
 
 /*------- VERSION DESKTOP ------ */
 
 @media screen and (min-width: 992px){
 
+  h1{
+    font-size: large;
+  }
+
+  h2{
+    font-size: medium;
+  }
+
+  p{
+    font-size: small;
+  }
+
   header, main{
-    margin: 0 30px;
+    margin: 0 40px;
   }
 
   header {
     display : flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+    height: 100px;
   }
 
   .booki_logo{
     display: flex;
+    height: 40px;
   }
   
   .navbar{
@@ -236,13 +265,12 @@ footer ul{
 
   .search_bar form{
     display: flex;
-
   }
 
   .search_input{
-    border: 0;
     border: solid #F2F2F2;
     border-right: 0;
+    font-weight: bold;
   }
 
   .search_button{
@@ -252,25 +280,28 @@ footer ul{
     border: 0;
     background-size: cover;
     border-radius: 0 15px 15px 0;
+    font-weight: bold;
+    height: 40px;
+    width: 100px;
   }
 
   .search_button:hover{
-
+    opacity: 0.5;
   }
 
   .fa-location-dot{
-    width: 50px;
+    width: 40px;
     background-color: #F2F2F2;
     border-radius: 15px 0 0 15px;
   }
 
   .fa-location-dot::before{
     position: relative;
-    top: 20px;
-    left: 20px;
+    top: 12px;
+    left: 15px;
   }
 
-  /* RESULTATS */
+  /*DESKTOP RESULTATS*/
 
 
   .list_hebergement{
@@ -286,13 +317,13 @@ footer ul{
   }
 
   .card_medium{
-    width: 350px;
-    height: 250px;
+    width: 270px;
+    height: 200px;
   }
 
   .card_small{
-    width: 400px;
-    height: 150px;
+    width: 350px;
+    height: 130px;
   }
 
   /*DESKTOP ACTIVITES*/
