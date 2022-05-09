@@ -219,7 +219,7 @@ footer{
 
 footer ul{
   padding-left: 0px;
-  margin-right: 300px;
+  margin-right: 250px;
   min-width: 230px;
 }
 
@@ -493,11 +493,16 @@ footer li{
     align-items: center;
   }
 
+  .list_hebergement{
+    margin-top: 50px;
+  }
+
   .list_populaires{
     padding: 10px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
   }
 
 
@@ -518,6 +523,7 @@ footer li{
     display:flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
   }
 
   .card_activites{
@@ -538,6 +544,7 @@ footer li{
 
   .body{
     align-items: center;
+    
   }
 
   h1{
