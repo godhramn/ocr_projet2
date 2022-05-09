@@ -3,10 +3,17 @@ body {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
+<<<<<<< HEAD
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+=======
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+>>>>>>> project2 ver 1.01
 }
 
 a{
@@ -18,9 +25,14 @@ ul {
   list-style-type: none;
 }
 
+<<<<<<< HEAD
 main{
   margin:0 auto;
   min-height:100%
+=======
+header, main{
+  max-width: 1500px;
+>>>>>>> project2 ver 1.01
 }
 
 
@@ -68,6 +80,11 @@ main{
 .filters .fa-stack-2x{
   color: #DEEBFF;
   font-size: 45px;
+<<<<<<< HEAD
+=======
+  position:absolute;
+  top: -2px;
+>>>>>>> project2 ver 1.01
 }
 
 .filters .fa-stack-1x{
@@ -75,7 +92,11 @@ main{
   font-size: 20px;
   display:flex;
   position:relative;
+<<<<<<< HEAD
   top: -7px;
+=======
+  top: -9px;
+>>>>>>> project2 ver 1.01
 }
 
 .result_number .fa-stack-2x{
@@ -176,6 +197,10 @@ main{
 
 .card_small .tag{
   padding: 0 15px 5px ;
+<<<<<<< HEAD
+=======
+  width: 60%;
+>>>>>>> project2 ver 1.01
 }
 
 /* ACTIVITES*/
@@ -218,6 +243,10 @@ footer{
 footer ul{
   padding-left: 0px;
   margin-right: 300px;
+<<<<<<< HEAD
+=======
+  min-width: 230px;
+>>>>>>> project2 ver 1.01
 }
 
 footer li{
@@ -343,11 +372,26 @@ footer li{
   }
 
   .list_populaires{
+<<<<<<< HEAD
     margin-left: 20px;
     padding: 30px;
     max-height: 630px;
   }
 
+=======
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20px;
+    padding: 10px;
+    max-height: 630px;
+  }
+
+  .list_populaires h1{
+    margin: 20px;
+  }
+
+>>>>>>> project2 ver 1.01
   .card_medium{
     width: 270px;
     height: 200px;
@@ -383,10 +427,13 @@ footer li{
   .card article img{
     max-height: 200px;
   }
+<<<<<<< HEAD
   
   
 
 
+=======
+>>>>>>> project2 ver 1.01
 
 }
 
@@ -437,6 +484,10 @@ footer li{
 
   .search_bar form{
     display: flex;
+<<<<<<< HEAD
+=======
+    width: 100%;
+>>>>>>> project2 ver 1.01
   }
 
   .search_input{
@@ -487,8 +538,11 @@ footer li{
   }
 
   .list_populaires{
+<<<<<<< HEAD
     border-radius: 0;
     width: 100%;
+=======
+>>>>>>> project2 ver 1.01
     padding: 10px 20px;
     display: flex;
     flex-direction: column;
@@ -501,10 +555,13 @@ footer li{
     height: 300px;
   }
 
+<<<<<<< HEAD
   .tag{
     height: 40%;
   }
 
+=======
+>>>>>>> project2 ver 1.01
   .card_small{
     width: 600px;
     height: 150px;
