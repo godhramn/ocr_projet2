@@ -3,23 +3,10 @@ body {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-=======
->>>>>>> 8cec6d6
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: 0;
-<<<<<<< HEAD
-=======
->>>>>>> project2 ver 1.01
->>>>>>> 8cec6d6
 }
 
 a{
@@ -31,19 +18,8 @@ ul {
   list-style-type: none;
 }
 
-<<<<<<< HEAD
 header, main{
   max-width: 1500px;
-=======
-<<<<<<< HEAD
-main{
-  margin:0 auto;
-  min-height:100%
-=======
-header, main{
-  max-width: 1500px;
->>>>>>> project2 ver 1.01
->>>>>>> 8cec6d6
 }
 
 
@@ -91,16 +67,8 @@ header, main{
 .filters .fa-stack-2x{
   color: #DEEBFF;
   font-size: 45px;
-<<<<<<< HEAD
   position:absolute;
   top: -2px;
-=======
-<<<<<<< HEAD
-=======
-  position:absolute;
-  top: -2px;
->>>>>>> project2 ver 1.01
->>>>>>> 8cec6d6
 }
 
 .filters .fa-stack-1x{
@@ -108,15 +76,7 @@ header, main{
   font-size: 20px;
   display:flex;
   position:relative;
-<<<<<<< HEAD
   top: -9px;
-=======
-<<<<<<< HEAD
-  top: -7px;
-=======
-  top: -9px;
->>>>>>> project2 ver 1.01
->>>>>>> 8cec6d6
 }
 
 .result_number .fa-stack-2x{
@@ -217,14 +177,7 @@ header, main{
 
 .card_small .tag{
   padding: 0 15px 5px ;
-<<<<<<< HEAD
   width: 60%;
-=======
-<<<<<<< HEAD
-=======
-  width: 60%;
->>>>>>> project2 ver 1.01
->>>>>>> 8cec6d6
 }
 
 /* ACTIVITES*/
@@ -267,14 +220,7 @@ footer{
 footer ul{
   padding-left: 0px;
   margin-right: 300px;
-<<<<<<< HEAD
   min-width: 230px;
-=======
-<<<<<<< HEAD
-=======
-  min-width: 230px;
->>>>>>> project2 ver 1.01
->>>>>>> 8cec6d6
 }
 
 footer li{
@@ -400,16 +346,6 @@ footer li{
   }
 
   .list_populaires{
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    margin-left: 20px;
-    padding: 30px;
-    max-height: 630px;
-  }
-
-=======
->>>>>>> 8cec6d6
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -422,10 +358,6 @@ footer li{
     margin: 20px;
   }
 
-<<<<<<< HEAD
-=======
->>>>>>> project2 ver 1.01
->>>>>>> 8cec6d6
   .card_medium{
     width: 270px;
     height: 200px;
@@ -461,16 +393,6 @@ footer li{
   .card article img{
     max-height: 200px;
   }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-  
-  
-
-
-=======
->>>>>>> project2 ver 1.01
->>>>>>> 8cec6d6
 
 }
 
@@ -521,14 +443,7 @@ footer li{
 
   .search_bar form{
     display: flex;
-<<<<<<< HEAD
     width: 100%;
-=======
-<<<<<<< HEAD
-=======
-    width: 100%;
->>>>>>> project2 ver 1.01
->>>>>>> 8cec6d6
   }
 
   .search_input{
@@ -579,14 +494,6 @@ footer li{
   }
 
   .list_populaires{
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    border-radius: 0;
-    width: 100%;
-=======
->>>>>>> project2 ver 1.01
->>>>>>> 8cec6d6
     padding: 10px 20px;
     display: flex;
     flex-direction: column;
@@ -599,16 +506,6 @@ footer li{
     height: 300px;
   }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-  .tag{
-    height: 40%;
-  }
-
-=======
->>>>>>> project2 ver 1.01
->>>>>>> 8cec6d6
   .card_small{
     width: 600px;
     height: 150px;
