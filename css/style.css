@@ -236,6 +236,7 @@ footer li{
 
 @media screen and (min-width: 992px){
 
+
   h1{
     font-size: large;
   }
@@ -248,8 +249,9 @@ footer li{
     font-size: small;
   }
 
-  header, main{
-    margin: 0 40px;
+
+  main{
+    margin: auto;
   }
 
   header {
@@ -258,10 +260,11 @@ footer li{
     justify-content: space-between;
     align-items: center;
     height: 100px;
+    width: 100%;
+    margin: auto;
   }
 
   .booki_logo{
-    display: flex;
     height: 40px;
     margin-left: 10px;
   }
