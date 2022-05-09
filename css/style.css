@@ -1,0 +1,684 @@
+body {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color : black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header, main{
+  max-width: 1500px;
+}
+
+
+
+/*FILTRES*/
+
+.filters{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px 0;
+}
+
+
+.filters a{
+  display: flex; 
+  align-items: center;
+  border: solid #F2F2F2;
+  border-radius: 50px;
+  margin: 15px;
+}
+
+.filters a:hover{
+  box-shadow: 1px 5px 3px grey;
+}
+
+.filters span{
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  
+}
+
+.filters i{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filters h2{
+  margin: 0 10px 0 10px;
+}
+
+.filters .fa-stack-2x{
+  color: #DEEBFF;
+  font-size: 45px;
+  position:absolute;
+  top: -2px;
+}
+
+.filters .fa-stack-1x{
+  color:#0065FC;
+  font-size: 20px;
+  display:flex;
+  position:relative;
+  top: -9px;
+}
+
+.result_number .fa-stack-2x{
+  color: #F2F2F2;
+}
+
+.result_number .fa-stack-1x{
+  color: #0065FC;
+}
+
+
+/*RESULTATS*/
+
+.results_hebergement{
+  display:flex;
+  margin-top: 30px;
+}
+
+.results_hebergement h2{
+  margin-bottom: 0px;
+}
+
+.tag{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rating .blue{
+  color: #0065FC;
+}
+
+.rating .grey{
+  color:#F2F2F2;
+}
+
+.title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/*Hebergements à Marseille*/
+
+
+.list_hebergement h1{
+  width: 100%;
+}
+
+.results_hebergement a{
+  padding: 20px;
+}
+
+.card_medium{
+  padding: 5px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 12px #d9d9d9;
+  background-color: white;
+}
+
+.card_medium .tag{
+  padding: 0 15px 5px ;
+}
+
+.card_medium h2, p{
+  margin: 8px 0;
+}
+
+.card_medium img{
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  object-fit: cover;
+  height: 55%;
+}
+
+/*Les plus populaires*/
+
+.list_populaires{
+  border-radius: 24px;
+  background-color: #F2F2F2;
+}
+
+.card_small{
+  display: flex;
+  padding: 5px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 1px 1px 12px #d9d9d9;
+}
+
+.card_small img{
+  border-radius: 20px 0 0 20px;
+  width: 40%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.card_small .tag{
+  padding: 0 15px 5px ;
+  width: 60%;
+}
+
+/* ACTIVITES*/
+
+.card_activites{
+  padding: 5px;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 12px #d9d9d9;
+  background-color: white;
+}
+
+.card_activites img{
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.card_activites h2{
+  margin-left: 20px;
+}
+
+
+/*FOOTER*/
+
+footer{
+  background-color: #F2F2F2;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.bottom_links{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 30px;
+}
+
+footer ul{
+  padding-left: 0px;
+  margin-right: 300px;
+  min-width: 230px;
+}
+
+footer li{
+  margin-bottom: 10px;
+}
+
+/*------- VERSION DESKTOP ------ */
+
+@media screen and (min-width: 992px){
+
+  h1{
+    font-size: large;
+  }
+
+  h2{
+    font-size: medium;
+  }
+
+  p{
+    font-size: small;
+  }
+
+  header, main{
+    margin: 0 40px;
+  }
+
+  header {
+    display : flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+  }
+
+  .booki_logo{
+    display: flex;
+    height: 40px;
+  }
+  
+  .navbar{
+    display: flex;
+  }
+
+  .navbar a{
+    padding: 40px;
+    text-align: center;
+  }
+
+  .navbar a:hover{
+    color: #0065FC;
+    border-top: solid;
+  }
+  
+  .navbar a:focus{
+    color: #0065FC;
+    border-top: solid;
+  }
+
+    /* DESKTOP BARRE DE RECHERCHE */
+
+  .search_bar form{
+    display: flex;
+  }
+
+  .search_input{
+    border: solid #F2F2F2;
+    border-right: 0;
+    font-weight: bold;
+  }
+
+  .search_button{
+    cursor: pointer;
+    color: white;
+    background-color: #0065FC;
+    border: 0;
+    background-size: cover;
+    border-radius: 0 15px 15px 0;
+    font-weight: bold;
+    height: 40px;
+    width: 100px;
+  }
+
+  .search_button:hover{
+    opacity: 0.5;
+  }
+
+  .search_button .fa-magnifying-glass{
+    display: none;
+  }
+
+  .fa-location-dot{
+    width: 40px;
+    background-color: #F2F2F2;
+    border-radius: 15px 0 0 15px;
+  }
+
+  .fa-location-dot::before{
+    position: relative;
+    top: 12px;
+    left: 15px;
+  }
+
+  /*DESKTOP RESULTATS*/
+
+  .list_hebergement{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    border-radius: 24px;
+    background-color: #F2F2F2;
+    margin-right: 20px;
+    padding: 20px;
+  }
+
+  .list_hebergement h1{
+    padding: 0 20px;
+    width: 100%;
+  }
+
+  #showMore{
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .list_populaires{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20px;
+    padding: 10px;
+    max-height: 630px;
+  }
+
+  .list_populaires h1{
+    margin: 20px;
+  }
+
+  .card_medium{
+    width: 270px;
+    height: 200px;
+  }
+
+  .card_small{
+    width: 350px;
+    height: 130px;
+  }
+
+  /*DESKTOP ACTIVITES*/
+
+  .results_activite{
+    margin: 30px 0;
+    height: 100%;
+  }
+
+  .list_activite{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 515px;
+  }
+
+
+  .card-large article{
+    height: 100%;
+  }
+
+  .card{
+    max-height: 230px;
+  }
+
+  .card article img{
+    max-height: 200px;
+  }
+
+}
+
+/*------- VERSION TABLETTE ------ */
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+
+  h1{
+    font-size: 30px;
+    margin: 10px auto;
+  }
+
+  h2{
+    font-size: 21px;
+  }
+  
+  .booki_logo{
+    display: block;
+    width: 120px;
+    margin: 20px auto;
+  }
+
+  .navbar a:focus{
+    color: #0065FC;
+    border-bottom: solid;
+  }
+
+  .navbar{
+    display: flex;
+    text-align: center;
+  }
+
+  .navbar a{
+    padding: 40px;
+    width: 100%;
+  }
+  /* TABLETTE BARRE DE RECHERCHE */
+
+  .search{
+    padding: 20px;
+   
+  }
+  .search_bar{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .search_bar form{
+    display: flex;
+    width: 100%;
+  }
+
+  .search_input{
+    border: solid #F2F2F2;
+    border-right: 0;
+    font-weight: bold;
+  }
+
+  .search_button{
+    cursor: pointer;
+    color: white;
+    background-color: #0065FC;
+    border: 0;
+    background-size: cover;
+    border-radius: 0 15px 15px 0;
+    font-weight: bold;
+    height: 50px;
+    width: 100px;
+  }
+
+  .search_button .fa-magnifying-glass{
+    display: none;
+  }
+
+  .fa-location-dot{
+    width: 40px;
+    background-color: #F2F2F2;
+    border-radius: 15px 0 0 15px;
+  }
+
+  .fa-location-dot::before{
+    position: relative;
+    top: 15px;
+    left: 15px;
+  }
+
+  .filters, .result_number{
+    margin-left: 10px;
+  }
+  
+  /* TABLETTE RESULTATS */
+
+
+  .results_hebergement{
+    display:flex;
+    flex-flow: wrap column-reverse;
+    align-items: center;
+  }
+
+  .list_populaires{
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .card_medium{
+    width: 100%;
+    height: 300px;
+  }
+
+  .card_small{
+    width: 600px;
+    height: 150px;
+  }
+
+
+  /*TABLETTE ACTIVITES*/
+
+  .results_activite{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card_activites{
+    margin-top: 20px;
+    height: 200px;
+    width: 380px;
+  }
+
+  .card_activites img{
+    height: 70%;
+  }
+  
+}
+
+/*------- VERSION MOBILE ------ */
+
+@media screen and (max-width: 768px){
+
+  .body{
+    align-items: center;
+  }
+
+  h1{
+    font-size: 25px;
+    margin: 10px auto;
+  }
+
+  h2{
+    font-size: 16px;
+  }
+
+  .booki_logo{
+    display: block;
+    width: 120px;
+    margin: 20px auto;
+  }
+
+  .navbar{
+    display: flex;
+    text-align: center;
+    width: 100%;
+  }
+
+  .navbar a{
+    width: 100%;
+    padding: 20px;
+  }
+  .navbar a:focus{
+    color: #0065FC;
+    border-bottom: solid;
+  }
+
+  .filters h2{
+    width: 100%;
+  }
+
+  
+  /*MOBILE RECHERCHE*/
+
+  .search{
+    padding: 20px;
+  }
+
+
+  .search_bar form{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .search_input{
+    border: solid #F2F2F2;
+    border-right: 0;
+    font-weight: bold;
+    width: 80%;
+  }
+
+  .search_button{
+    cursor: pointer;
+    color: white;
+    background-color: #0065FC;
+    border: 0;
+    background-size: cover;
+    border-radius: 15px;
+    font-weight: bold;
+    height: 50px;
+    width: 50px;
+  }
+
+  .search_button .fa-magnifying-glass{
+    font-size: 15px;
+  }
+
+  .search_button strong{
+    display: none;
+  }
+
+  .fa-location-dot{
+    width: 50px;
+    background-color: #F2F2F2;
+    border-radius: 15px 0 0 15px;
+  }
+
+  .fa-location-dot::before{
+    position: relative;
+    font-size: 20px;
+    top: 14px;
+    left: 18px;
+  }
+
+  .filters, .result_number{
+    margin-left: 10px;
+  }
+  
+  /*MOBILE RESULTATS*/
+
+  .results_hebergement{
+    display:flex;
+    flex-wrap: wrap-reverse;
+  }
+
+  .list_populaires{
+    border-radius: 0;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .list_hebergement{
+    width: 100%;
+    padding: 20px 0;
+    margin: 20px;
+  }
+
+  .card_medium{
+    height: 200px;
+    padding-bottom: 10px;
+  }
+
+  .card_small{
+    height: 150px;
+    
+  }
+
+  .title h1{
+    margin-left: 0;
+  }
+
+  /*MOBILE ACTIVITES*/
+
+  .results_activite{
+    margin: 20px;
+  }
+
+  .card_activites{
+    margin-top: 20px;
+    height: 200px;
+    padding: 0;
+  }
+
+  .card_activites img{
+    height: 70%;
+  }
+}
