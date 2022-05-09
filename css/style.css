@@ -62,7 +62,7 @@ main{
 }
 
 .filters h2{
-  margin: 0 10px 0 20px;
+  margin: 0 10px 0 10px;
 }
 
 .filters .fa-stack-2x{
@@ -86,11 +86,22 @@ main{
   color: #0065FC;
 }
 
+
 /*RESULTATS*/
 
 .results_hebergement{
   display:flex;
   margin-top: 30px;
+}
+
+.results_hebergement h2{
+  margin-bottom: 0px;
+}
+
+.tag{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .rating .blue{
@@ -185,9 +196,7 @@ main{
 }
 
 .card_activites h2{
-  padding: auto;
   margin-left: 20px;
-  height: 40px;
 }
 
 
@@ -359,19 +368,16 @@ footer li{
   .list_activite{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 550px;
+    grid-template-rows: 515px;
   }
 
-  .card_activites{
-    
-  }
 
   .card-large article{
     height: 100%;
   }
 
   .card{
-    max-height: 255px;
+    max-height: 230px;
   }
 
   .card article img{
@@ -466,6 +472,10 @@ footer li{
     top: 15px;
     left: 15px;
   }
+
+  .filters, .result_number{
+    margin-left: 10px;
+  }
   
   /* TABLETTE RESULTATS */
 
@@ -491,10 +501,15 @@ footer li{
     height: 300px;
   }
 
+  .tag{
+    height: 40%;
+  }
+
   .card_small{
     width: 600px;
     height: 150px;
   }
+
 
   /*TABLETTE ACTIVITES*/
 
@@ -502,12 +517,12 @@ footer li{
     display:flex;
     flex-direction: column;
     align-items: center;
-    
   }
 
   .card_activites{
     margin-top: 20px;
     height: 200px;
+    width: 380px;
   }
 
   .card_activites img{
@@ -613,12 +628,15 @@ footer li{
     left: 18px;
   }
 
+  .filters, .result_number{
+    margin-left: 10px;
+  }
+  
   /*MOBILE RESULTATS*/
 
   .results_hebergement{
     display:flex;
     flex-wrap: wrap-reverse;
-  
   }
 
   .list_populaires{
@@ -643,6 +661,10 @@ footer li{
     
   }
 
+  .title h1{
+    margin-left: 0;
+  }
+
   /*MOBILE ACTIVITES*/
 
   .results_activite{
@@ -652,6 +674,7 @@ footer li{
   .card_activites{
     margin-top: 20px;
     height: 200px;
+    padding: 0;
   }
 
   .card_activites img{
