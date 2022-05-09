@@ -51,7 +51,6 @@ header, main{
   font-size: 30px;
   width: 40px;
   height: 40px;
-  
 }
 
 .filters i{
@@ -61,7 +60,7 @@ header, main{
 }
 
 .filters h2{
-  margin: 0 10px 0 10px;
+  margin: 0 15px 0 10px;
 }
 
 .filters .fa-stack-2x{
@@ -79,6 +78,10 @@ header, main{
   top: -9px;
 }
 
+.result_number{
+  display: flex;
+}
+
 .result_number .fa-stack-2x{
   color: #F2F2F2;
 }
@@ -86,6 +89,8 @@ header, main{
 .result_number .fa-stack-1x{
   color: #0065FC;
 }
+
+
 
 
 /*RESULTATS*/
@@ -183,7 +188,7 @@ header, main{
 /* ACTIVITES*/
 
 .card_activites{
-  padding: 5px;
+  padding-bottom: 5px;
   margin: 10px;
   border-radius: 20px;
   box-shadow: 1px 1px 12px #d9d9d9;
@@ -219,7 +224,7 @@ footer{
 
 footer ul{
   padding-left: 0px;
-  margin-right: 250px;
+  margin-right: 260px;
   min-width: 230px;
 }
 
@@ -258,6 +263,7 @@ footer li{
   .booki_logo{
     display: flex;
     height: 40px;
+    margin-left: 10px;
   }
   
   .navbar{
@@ -287,8 +293,15 @@ footer li{
 
   .search_input{
     border: solid #F2F2F2;
+    border-width: thin;
     border-right: 0;
+    padding-left: 10px;
     font-weight: bold;
+    font-size: medium;
+  }
+
+  .search_input:focus{
+    outline: none;
   }
 
   .search_button{
@@ -299,8 +312,8 @@ footer li{
     background-size: cover;
     border-radius: 0 15px 15px 0;
     font-weight: bold;
-    height: 40px;
-    width: 100px;
+    height: 45px;
+    width: 120px;
   }
 
   .search_button:hover{
@@ -312,15 +325,15 @@ footer li{
   }
 
   .fa-location-dot{
-    width: 40px;
+    width: 45px;
     background-color: #F2F2F2;
     border-radius: 15px 0 0 15px;
   }
 
   .fa-location-dot::before{
     position: relative;
-    top: 12px;
-    left: 15px;
+    top: 13px;
+    left: 17px;
   }
 
   /*DESKTOP RESULTATS*/
@@ -358,6 +371,10 @@ footer li{
     margin: 20px;
   }
 
+  .list_populaires .title i{
+    margin-right: 20px;
+  }
+
   .card_medium{
     width: 270px;
     height: 200px;
@@ -371,27 +388,31 @@ footer li{
   /*DESKTOP ACTIVITES*/
 
   .results_activite{
-    margin: 30px 0;
+    margin: 50px 0;
     height: 100%;
+  }
+
+  .results_activite h1{
+    margin-left: 10px;
   }
 
   .list_activite{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 515px;
+    grid-template-rows: 520px;
   }
 
+  .list_activite article{
+    margin: 30px;
+  }
 
   .card-large article{
     height: 100%;
   }
 
-  .card{
-    max-height: 230px;
-  }
 
   .card article img{
-    max-height: 200px;
+    max-height: 192px;
   }
 
 }
@@ -450,6 +471,9 @@ footer li{
     border: solid #F2F2F2;
     border-right: 0;
     font-weight: bold;
+    border-width: thin;
+    padding-left: 10px;
+    font-size: medium;
   }
 
   .search_button{
@@ -461,7 +485,7 @@ footer li{
     border-radius: 0 15px 15px 0;
     font-weight: bold;
     height: 50px;
-    width: 100px;
+    width: 120px;
   }
 
   .search_button .fa-magnifying-glass{
@@ -469,15 +493,15 @@ footer li{
   }
 
   .fa-location-dot{
-    width: 40px;
+    width: 45px;
     background-color: #F2F2F2;
     border-radius: 15px 0 0 15px;
   }
 
   .fa-location-dot::before{
     position: relative;
-    top: 15px;
-    left: 15px;
+    top: 16px;
+    left: 17px;
   }
 
   .filters, .result_number{
@@ -600,6 +624,8 @@ footer li{
     border: solid #F2F2F2;
     border-right: 0;
     font-weight: bold;
+    font-size: medium;
+    border-width: thin;
     width: 80%;
   }
 
@@ -639,6 +665,10 @@ footer li{
   .filters, .result_number{
     margin-left: 10px;
   }
+
+  .result_number span{
+    
+  }
   
   /*MOBILE RESULTATS*/
 
@@ -650,17 +680,21 @@ footer li{
   .list_populaires{
     border-radius: 0;
     width: 100%;
-    padding: 0 20px;
+    padding: 20px;
   }
 
   .list_hebergement{
     width: 100%;
     padding: 20px 0;
-    margin: 20px;
+    margin: 20px; 
+  }
+
+  .list_hebergement .tag{
+    height: 43%;
   }
 
   .card_medium{
-    height: 200px;
+    height: 250px;
     padding-bottom: 10px;
   }
 
@@ -681,7 +715,7 @@ footer li{
 
   .card_activites{
     margin-top: 20px;
-    height: 200px;
+    height: 240px;
     padding: 0;
   }
 
