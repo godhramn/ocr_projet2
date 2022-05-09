@@ -608,6 +608,10 @@ footer li{
     width: 100%;
   }
 
+  .filters a h2{
+    margin-left: 20px;
+  }
+
   
   /*MOBILE RECHERCHE*/
 
