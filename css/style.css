@@ -6,7 +6,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 0;
+ 
 }
 
 a{
@@ -19,8 +19,8 @@ ul {
 }
 
 header, main{
-  max-width: 1500px;
-}
+  max-width: 1700px;
+  }
 
 
 
@@ -31,7 +31,7 @@ header, main{
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  margin: 10px 0;
+  margin: 10px;
 }
 
 
@@ -44,7 +44,8 @@ header, main{
 }
 
 .filters a:hover{
-  box-shadow: 1px 5px 3px grey;
+  box-shadow: 1px 1px 4px rgb(129, 156, 192);
+  opacity: 0.7;
 }
 
 .filters span{
@@ -143,6 +144,11 @@ header, main{
   background-color: white;
 }
 
+.card_medium:hover{
+  box-shadow: 1px 1px 4px rgb(129, 156, 192);
+  opacity: 0.7;
+}
+
 .card_medium .tag{
   padding: 0 15px 5px ;
 }
@@ -173,6 +179,11 @@ header, main{
   box-shadow: 1px 1px 12px #d9d9d9;
 }
 
+.card_small:hover{
+  box-shadow: 1px 1px 4px rgb(129, 156, 192);
+  opacity: 0.7;
+}
+
 .card_small img{
   border-radius: 20px 0 0 20px;
   width: 40%;
@@ -193,6 +204,11 @@ header, main{
   border-radius: 20px;
   box-shadow: 1px 1px 12px #d9d9d9;
   background-color: white;
+}
+
+.card_activites:hover{
+  box-shadow: 1px 1px 4px rgb(129, 156, 192);
+  opacity: 0.7;
 }
 
 .card_activites img{
@@ -251,7 +267,7 @@ footer li{
 
 
   main{
-    margin: auto;
+    margin: 0 50px;
   }
 
   header {
@@ -261,7 +277,7 @@ footer li{
     align-items: center;
     height: 100px;
     width: 100%;
-    margin: auto;
+    margin: 0 50px;
   }
 
   .booki_logo{
@@ -271,6 +287,7 @@ footer li{
   
   .navbar{
     display: flex;
+    margin-right: 70px;
   }
 
   .navbar a{
@@ -278,15 +295,11 @@ footer li{
     text-align: center;
   }
 
-  .navbar a:hover{
+  .navbar a:hover, .navbar a:active, .navbar a:focus{
     color: #0065FC;
     border-top: solid;
   }
   
-  .navbar a:focus{
-    color: #0065FC;
-    border-top: solid;
-  }
 
     /* DESKTOP BARRE DE RECHERCHE */
 
@@ -356,6 +369,10 @@ footer li{
     width: 100%;
   }
 
+  .list_hebergement .tag{
+    height: 40%;
+  }
+
   #showMore{
     width: 100%;
     padding: 0 20px;
@@ -403,22 +420,29 @@ footer li{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 520px;
+   
   }
 
   .list_activite article{
-    margin: 30px;
+    margin: 10px;
   }
 
   .card-large article{
     height: 100%;
   }
 
-
+  .card article{
+    margin: 10px 30px 30px;
+  }
   .card article img{
     max-height: 192px;
   }
 
+  footer{
+    padding-left: 40px;
+  }
 }
+
 
 /*------- VERSION TABLETTE ------ */
 
@@ -439,7 +463,7 @@ footer li{
     margin: 20px auto;
   }
 
-  .navbar a:focus{
+  .navbar a:hover, .navbar a:active, .navbar a:focus{
     color: #0065FC;
     border-bottom: solid;
   }
@@ -453,6 +477,8 @@ footer li{
     padding: 40px;
     width: 100%;
   }
+
+ 
   /* TABLETTE BARRE DE RECHERCHE */
 
   .search{
@@ -521,7 +547,23 @@ footer li{
   }
 
   .list_hebergement{
-    margin-top: 50px;
+    margin: 50px 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    border-radius: 24px;
+    background-color: #F2F2F2;
+    margin-right: 20px;
+    padding: 20px;
+  }
+
+  .list_hebergement .tag{
+    height: 40%;
+  }
+
+  #showMore{
+    width: 100%;
+    padding: 0 20px;
   }
 
   .list_populaires{
@@ -534,8 +576,8 @@ footer li{
 
 
   .card_medium{
-    width: 100%;
-    height: 300px;
+    width: 300px;
+    height: 250px;
   }
 
   .card_small{
@@ -546,24 +588,33 @@ footer li{
 
   /*TABLETTE ACTIVITES*/
 
-  .results_activite{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
+
+  .list_activite{
+    margin: 50px 30px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
   }
 
   .card_activites{
     margin-top: 20px;
-    height: 200px;
-    width: 380px;
+    height: 250px;
+    width: 300px;
   }
 
   .card_activites img{
-    height: 70%;
+    height: 80%;
   }
   
+  .card-large article{
+    height: 530px;
+  }
+
+  footer{
+    padding-left: 40px;
+  }
 }
+
 
 /*------- VERSION MOBILE ------ */
 
@@ -599,7 +650,7 @@ footer li{
     width: 100%;
     padding: 20px;
   }
-  .navbar a:focus{
+  .navbar a:hover, .navbar a:active, .navbar a:focus{
     color: #0065FC;
     border-bottom: solid;
   }
@@ -673,9 +724,6 @@ footer li{
     margin-left: 10px;
   }
 
-  .result_number span{
-    
-  }
   
   /*MOBILE RESULTATS*/
 
@@ -697,7 +745,7 @@ footer li{
   }
 
   .list_hebergement .tag{
-    height: 43%;
+    height: 40%;
   }
 
   .card_medium{
@@ -729,4 +777,6 @@ footer li{
   .card_activites img{
     height: 70%;
   }
+
+ 
 }
