@@ -269,7 +269,6 @@ footer li{
     font-size: 20px;
   }
 
-
   header {
     display : flex;
     flex-wrap: wrap;
@@ -759,8 +758,16 @@ footer li{
   }
 
   .filters, .result_number{
-    margin-left: 10px;
+    margin-left: 15px;
   }
+
+  .filters a{
+    margin: 5px 5px 10px 15px;
+  }
+  .filters a h2{
+    margin-right: 5px;
+  }
+
 
   
   /*MOBILE RESULTATS*/
@@ -816,5 +823,8 @@ footer li{
     height: 70%;
   }
 
+  .card_activites h2{
+    margin-top: 20px;
+  }
  
 }
